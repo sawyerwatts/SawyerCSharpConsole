@@ -4,7 +4,7 @@
   "classifications": [ "Common", "Console" ],
   "identity": "SawyerConsole",
   "name": "Sawyer's Console",
-  "shortName": "SawyerConsole",
+  "shortName": "sawyerconsole",
   "sourceName": "SawyerCSharpConsole",
   "tags": {
     "language": "C#",
