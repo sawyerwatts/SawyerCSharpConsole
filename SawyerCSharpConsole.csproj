@@ -19,7 +19,4 @@
     <PackageReference Include="serilog.sinks.file" Version="5.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Content Include=".template.config\template.json" />
-  </ItemGroup>
 </Project>
