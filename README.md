@@ -3,6 +3,9 @@
 This repo is a template for the .NET SDK to make a slightly more batteries
 included console csproj, subject to my preferences.
 
+This is a companion to
+[A Beginner's Guide to .NET's HostBulider](https://medium.com/@sawyer.watts/a-beginners-guide-to-net-s-hostbuilder-part-0-78882aab60f8).
+
 ## Installation
 
 Here are the steps in bash:
@@ -11,6 +14,7 @@ Here are the steps in bash:
 template_dir=~/.dotnetTemplates/SawyerCSharpConsole
 git clone https://github.com/sawyerwatts/SawyerCSharpConsole.git $template_dir
 rm -rf $template_dir/.git
+rm $template_dir/README.md
 dotnet new install $template_dir
 ```
 
@@ -20,6 +24,7 @@ Here are the steps in PowerShell:
 $templateDir="$env:USERPROFILE\.dotnetTemplates\SawyerCSharpConsole"
 git clone https://github.com/sawyerwatts/SawyerCSharpConsole.git $templateDir
 rm $templateDir\.git -r -force
+rm $templateDir\README.md
 dotnet new install $templateDir
 ```
 
