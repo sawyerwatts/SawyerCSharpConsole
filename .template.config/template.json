@@ -2,7 +2,7 @@
   "$schema": "http://json.schemastore.org/template",
   "author": "Sawyer Watts",
   "classifications": [ "Common", "Console" ],
-  "identity": "SawyerConsole",
+  "identity": "sawyerconsole",
   "name": "Sawyer's Console",
   "shortName": "sawyerconsole",
   "sourceName": "SawyerCSharpConsole",
