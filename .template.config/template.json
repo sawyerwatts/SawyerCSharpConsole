@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Sawyer Watts",
+  "classifications": [ "Common", "Console" ],
+  "identity": "sawyerconsole",
+  "name": "Sawyer's Console",
+  "shortName": "sawyerconsole",
+  "sourceName": "SawyerCSharpConsole",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
