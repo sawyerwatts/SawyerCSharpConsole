@@ -35,7 +35,7 @@ Here are the steps in bash:
 ```sh
 template_dir=~/.dotnetTemplates/SawyerCSharpConsole
 dotnet new uninstall $template_dir
-rm -rf $template_dir/.git
+rm -rf $template_dir
 ```
 
 Here are the steps in PowerShell:
