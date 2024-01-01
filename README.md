@@ -17,10 +17,10 @@ dotnet new install $template_dir
 Here are the steps in PowerShell:
 
 ```ps1
-# TODO: test this on windows partition
-$templateDir=$env:USERPROFILE\SawyerCSharpConsole
+$templateDir="$env:USERPROFILE\.dotnetTemplates\SawyerCSharpConsole"
 git clone https://github.com/sawyerwatts/SawyerCSharpConsole.git $templateDir
-rm -rf $templateDir\.git
+rm $templateDir\.git -r -force
+dotnet new install $templateDir
 ```
 
 ## Uninstallation
@@ -36,10 +36,9 @@ rm -rf $template_dir/.git
 Here are the steps in PowerShell:
 
 ```ps1
-# TODO: test this on windows partition
-$templateDir=$env:USERPROFILE\SawyerCSharpConsole
-dotnet new uninstall $template_dir
-rm -rf $templateDir
+$templateDir="$env:USERPROFILE\.dotnetTemplates\SawyerCSharpConsole"
+dotnet new uninstall $templateDir
+rm $templateDir -r -force
 ```
 
 ## Features
