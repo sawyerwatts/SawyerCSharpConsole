@@ -4,7 +4,7 @@ This repo is a template for the .NET SDK to make a slightly more batteries
 included console csproj, subject to my preferences.
 
 This is a companion to
-[A Beginner's Guide to .NET's HostBulider](https://medium.com/@sawyer.watts/a-beginners-guide-to-net-s-hostbuilder-part-0-78882aab60f8).
+[A Beginner's Guide to .NET's HostBuilder](https://medium.com/@sawyer.watts/a-beginners-guide-to-net-s-hostbuilder-part-0-78882aab60f8).
 
 ## Installation
 
