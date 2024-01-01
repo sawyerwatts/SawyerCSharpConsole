@@ -1,7 +1,7 @@
 # Sawyer's Console Template
 
 This repo is a template for the .NET SDK to make a slightly more batteries
-included console application, subject to my preferences.
+included console csproj, subject to my preferences.
 
 ## Installation
 
