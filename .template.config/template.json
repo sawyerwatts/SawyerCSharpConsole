@@ -6,6 +6,7 @@
   "name": "Sawyer's Console",
   "shortName": "sawyerconsole",
   "sourceName": "SawyerCSharpConsole",
+  "preferNameDirectory": true,
   "tags": {
     "language": "C#",
     "type": "project"
