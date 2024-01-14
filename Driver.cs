@@ -3,10 +3,19 @@ using Microsoft.Extensions.Options;
 
 namespace SawyerCSharpConsole;
 
-public class Driver(
-    IOptions<Driver.Settings> settings,
-    ILogger<Driver> logger)
+public class Driver
 {
+    private readonly Settings _settings;
+    private readonly ILogger<Driver> _logger;
+
+    public Driver(
+        IOptions<Settings> settings,
+        ILogger<Driver> logger)
+    {
+        _settings = settings.Value;
+        _logger = logger;
+    }
+
     public Task RunAsync(
         CancellationToken cancellationToken)
     {
@@ -18,9 +27,9 @@ public class Driver(
         IHostApplicationBuilder builder)
     {
         builder.Services.AddTransient<Driver>();
+        builder.Services.AddSingleton<IValidateOptions<Settings>, ValidateDriverSettings>();
         builder.Services.AddOptions<Settings>()
             .Bind(builder.Configuration.GetRequiredSection("Driver"))
-            .ValidateDataAnnotations()
             .ValidateOnStart();
     }
 
@@ -30,3 +39,6 @@ public class Driver(
         public string Demo { get; set; } = "";
     }
 }
+
+[OptionsValidator]
+public partial class ValidateDriverSettings : IValidateOptions<Driver.Settings>;
