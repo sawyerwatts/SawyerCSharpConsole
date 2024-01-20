@@ -1,4 +1,5 @@
 ﻿using SawyerCSharpConsole;
+
 using Serilog;
 
 var builder = Host.CreateApplicationBuilder(args);
