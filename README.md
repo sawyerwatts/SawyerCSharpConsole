@@ -14,7 +14,10 @@ Here are the steps in bash:
 template_dir=~/.dotnetTemplates/SawyerCSharpConsole
 git clone https://github.com/sawyerwatts/SawyerCSharpConsole.git $template_dir
 rm -rf $template_dir/.git
+rm $template_dir/.gitignore
+rm $template_dir/.editorconfig
 rm $template_dir/README.md
+rm $template_dir/LICENSE
 dotnet new install $template_dir
 ```
 
@@ -24,7 +27,10 @@ Here are the steps in PowerShell:
 $templateDir="$env:USERPROFILE\.dotnetTemplates\SawyerCSharpConsole"
 git clone https://github.com/sawyerwatts/SawyerCSharpConsole.git $templateDir
 rm $templateDir\.git -r -force
+rm $templateDir\.gitignore
+rm $templateDir\.editorconfig
 rm $templateDir\README.md
+rm $templateDir\LICENSE
 dotnet new install $templateDir
 ```
 
