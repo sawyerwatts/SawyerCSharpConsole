@@ -20,7 +20,7 @@ try
     // 2. Update cancellation token on first interception of interrupt signal.
     //     1. Force-closing the app on second interception of interrupt signal.
     //     2. Else, after five seconds, force-close the app.
-    var source = new CancellationTokenSource();
+    CancellationTokenSource source = new();
     bool graceful = true;
     Console.CancelKeyPress += new ConsoleCancelEventHandler((
         _,
